@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Mansi Pundir</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -18,49 +18,73 @@ height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-background:linear-gradient(135deg,#fffdf8,#f7f4ee);
 font-family:Georgia, serif;
-color:#444;
+
+background:linear-gradient(
+135deg,
+#7371FC,
+#A594F9,
+#CDC1FF,
+#F5EFFF,
+#E5D9F2
+);
+
+background-size:400% 400%;
+animation:gradientMove 12s ease infinite;
+
+color:#2c2540;
 padding:20px;
+overflow:hidden;
 }
 
 .container{
-max-width:800px;
+max-width:850px;
 text-align:center;
+padding:40px;
+
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,255,255,0.3);
+
+border-radius:30px;
+
+box-shadow:
+0 8px 30px rgba(0,0,0,0.08);
+
 animation:fadeIn 1.5s ease;
 }
 
 h1{
-font-size:4rem;
-font-weight:600;
-margin-bottom:25px;
-color:#2f2f2f;
+font-size:4.5rem;
+margin-bottom:20px;
+color:#2f2546;
 }
 
 .tagline{
 font-size:1.3rem;
 line-height:1.8;
-margin-bottom:30px;
+margin-bottom:25px;
 }
 
 .domain{
 font-size:2rem;
 font-weight:bold;
-color:#8b6f47;
-margin-bottom:30px;
+color:#6d5dfc;
+margin-bottom:25px;
 }
 
 .message{
-font-size:1.2rem;
-line-height:1.8;
+font-size:1.15rem;
+line-height:1.9;
 max-width:650px;
 margin:auto;
 }
 
 .footer{
-margin-top:50px;
+margin-top:40px;
 font-size:1rem;
-opacity:0.7;
+opacity:0.8;
 }
 
 @keyframes fadeIn{
@@ -73,6 +97,19 @@ opacity:1;
 transform:translateY(0);
 }
 }
+
+@keyframes gradientMove{
+0%{
+background-position:0% 50%;
+}
+50%{
+background-position:100% 50%;
+}
+100%{
+background-position:0% 50%;
+}
+}
+
 </style>
 </head>
 
@@ -91,9 +128,9 @@ mansipundir.com
 </div>
 
 <p class="message">
-Welcome to a small corner of the internet reserved with care.
-A place that will one day hold stories, ideas, achievements and memories worth sharing.
-Until then, let this page simply celebrate the person whose name it carries.
+Welcome to a personal corner of the web reserved for Mansi Pundir.
+A place for future stories, achievements, ideas and moments worth remembering.
+Until then, this little space quietly celebrates the person whose name it carries.
 </p>
 
 <div class="footer">
